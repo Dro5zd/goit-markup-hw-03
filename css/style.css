@@ -1,6 +1,5 @@
-ul[class],
-ol[class] {
-    padding: 0;
+* {
+    text-decoration: none;
     list-style: none;
 }
 
@@ -10,24 +9,19 @@ h3,
 h4,
 p,
 ul,
-ol,
-li,
-figure,
-figcaption {
+li{
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
 }
 
 /*Colors Palette*/
 
 :root {
+    --solid-black: #000000;
     --black: #212121;
     --light-black: #2F303A;
     --grey: #757575;
+    --opacity-grey: rgba(255, 255, 255, 0.6);
     --light-grey: #F5F4FA;
     --blue: #2196F3;
     --white: #FFFFFF
@@ -53,15 +47,25 @@ body {
     margin: 0 auto;
 }
 
-.section{
+.section {
     padding: 94px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    padding:0;
+    border:0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 /*STUDIO PAGE STYLES*/
 
 /*Header Style*/
 
-.header-container{
+.header-container {
     width: 1200px;
     display: flex;
     justify-content: center;
@@ -72,7 +76,6 @@ body {
 .header {
     padding: 25px 0;
     border-bottom: 1px solid #ECECEC;
-
 }
 
 .logo {
@@ -82,19 +85,23 @@ body {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: var(--solid-black);
 }
 
 .logo-blue {
     color: var(--blue);
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     width: 295px;
     justify-content: space-between;
     margin-right: 331px;
+}
+
+.nav-link ul {
+    display: inline;
 }
 
 .nav-link {
@@ -103,6 +110,10 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--black);
+}
+
+.nav-link.active {
+    color: var(--blue);
 }
 
 .nav-links a:hover, .contacts a:hover, .footer a:hover,
@@ -123,6 +134,50 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--grey);
+}
+
+/*Footer style*/
+
+.footer {
+    background-color: var(--light-black);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: start;
+    width: 1200px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.footer-container .main-logo-link {
+    margin-bottom: 20px;
+}
+
+.footer .logo {
+    line-height: 0.8;
+    color: var(--white);
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-style: normal;
+    width: 250px;
+    height: 81px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.footer-address .address-link {
+    color: var(--white);
+}
+
+.footer-address a {
+    color: var(--opacity-grey);
 }
 
 /*Main Container Styles*/
@@ -173,10 +228,9 @@ body {
 
 /*Tech Skills*/
 
-.tech-skills-list{
+.tech-skills-list {
     display: flex;
-justify-content: space-between;
-margin-bottom: 94px;
+    justify-content: space-between;
 }
 
 .tech-skills-item {
@@ -209,10 +263,11 @@ margin-bottom: 94px;
     margin-bottom: 50px;
 }
 
-.about-us-images{
+.about-us-images {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 94px;
 }
 
 /*Team*/
@@ -232,11 +287,10 @@ margin-bottom: 94px;
     background: var(--white);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
-
 }
 
-figcaption {
-   padding: 30px;
+.team-item-desc {
+    padding: 30px;
 }
 
 .team-name {
@@ -256,45 +310,6 @@ figcaption {
     color: var(--grey);
 }
 
-/*Footer style*/
-
-.footer {
-    background-color: var(--light-black);
-}
-
-.footer-container{
-    display: flex;
-    justify-content: start;
-    width: 1200px;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-.footer, .footer .logo {
-    color: var(--white);
-}
-
-.footer-address {
-    margin-top: 10px;
-    font-style: normal;
-    width: 250px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-}
-
-.footer-address {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-address a {
-    color: rgba(255, 255, 255, 0.6);
-    margin-top: 9px;
-}
-
 /*PORTFOLIO PAGE STYLES*/
 
 .main-container {
@@ -306,11 +321,10 @@ figcaption {
 .filter-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .filter-button {
-    background: #F5F4FA;
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
@@ -321,7 +335,7 @@ figcaption {
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    background: var(--light-grey);
 }
 
 .filter-button:hover {
@@ -333,7 +347,7 @@ figcaption {
 
 /*Project Style*/
 
-.projects-list{
+.projects-list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -350,6 +364,14 @@ figcaption {
 
 .project:nth-of-type(3n) {
     margin-right: 0;
+}
+
+.project:nth-of-type(n + 7) {
+    margin-bottom: 0;
+}
+
+.project-item-desc {
+    padding: 20px 24px;
 }
 
 .project-name {

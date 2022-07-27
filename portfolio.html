@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
 <header class="header">
     <div class="header-container">
-        <a href="./index.html">
-            <span class="logo"><span class="logo-blue">Web</span>Studio</span>
+        <a href="./index.html" class="logo">
+            <span class="logo-blue">Web</span>Studio
         </a>
-        <nav class="nav-links">
-            <a class="nav-link" href="./index.html">Студия</a>
-            <a class="nav-link" href="./portfolio.html">Портфолио</a>
-            <a class="nav-link" href="#">Контакты</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="./index.html">Студия</a></li>
+                <li><a class="nav-link active" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="nav-link" href="">Контакты</a></li>
+            </ul>
         </nav>
         <div class="contacts">
             <a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -27,6 +33,7 @@
 <main class="main-container">
     <section class="section">
         <div class="container">
+            <h1 class="visually-hidden">Наши проекты</h1>
             <ul class="filter-buttons">
                 <li>
                     <button class="filter-button" type="button">Все</button>
@@ -46,86 +53,68 @@
             </ul>
             <ul class="projects-list">
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/laptop.jpg" alt="ноутбук" width="370">
-                        <figcaption>
-                            <span class="project-name">Технокряк</span>
-                            <p class="project-type">Веб-сайт</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/laptop.jpg" alt="ноутбук" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Технокряк</h2>
+                        <p class="project-type">Веб-сайт</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/basketball.jpg" alt="баскетбол" width="370">
-                        <figcaption>
-                            <span class="project-name">Постер New Orlean vs Golden Star</span>
-                            <p class="project-type">Дизайн</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/basketball.jpg" alt="баскетбол" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Постер New Orleans vs Golden Star</h2>
+                        <p class="project-type">Дизайн</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/seafood.jpg" alt="рыбный ресторан" width="370">
-                        <figcaption>
-                            <span class="project-name">Ресторан Seafood</span>
-                            <p class="project-type">Приложение</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/seafood.jpg" alt="рыбный ресторан" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Ресторан Seafood</h2>
+                        <p class="project-type">Приложение</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/headphones.jpg" alt="наушники" width="370">
-                        <figcaption>
-                            <span class="project-name">Проект Prime</span>
-                            <p class="project-type">Маркетинг</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/headphones.jpg" alt="наушники" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Проект Prime</h2>
+                        <p class="project-type">Маркетинг</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/boxes.jpg" alt="коробки" width="370">
-                        <figcaption>
-                            <span class="project-name">Проект Boxes</span>
-                            <p class="project-type">Приложение</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/boxes.jpg" alt="коробки" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Проект Boxes</h2>
+                        <p class="project-type">Приложение</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/imac.jpg" alt="imac" width="370">
-                        <figcaption>
-                            <span class="project-name">Inspiration has no Borders</span>
-                            <p class="project-type">Веб-сайт</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/imac.jpg" alt="imac" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Inspiration has no Borders</h2>
+                        <p class="project-type">Веб-сайт</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/book.jpg" alt="книга" width="370">
-                        <figcaption>
-                            <span class="project-name">Издание Limited Edition</span>
-                            <p class="project-type">Дизайн</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/book.jpg" alt="книга" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Издание Limited Edition</h2>
+                        <p class="project-type">Дизайн</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/label.jpg" alt="ярлык" width="370">
-                        <figcaption>
-                            <span class="project-name">Проект LAB</span>
-                            <p class="project-type">Маркетинг</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/label.jpg" alt="ярлык" width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Проект LAB</h2>
+                        <p class="project-type">Маркетинг</p>
+                    </div>
                 </li>
                 <li class="project">
-                    <figure>
-                        <img class="project-img" src="images/portfolio/laptop-with-hands.jpg" alt="ноутбук2"
-                             width="370">
-                        <figcaption>
-                            <span class="project-name">Growing Business</span>
-                            <p class="project-type">Приложение</p>
-                        </figcaption>
-                    </figure>
+                    <img src="images/portfolio/laptop-with-hands.jpg" alt="ноутбук2"
+                         width="370">
+                    <div class="project-item-desc">
+                        <h2 class="project-name">Growing Business</h2>
+                        <p class="project-type">Приложение</p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -136,10 +125,21 @@
         <a href="./index.html" class="main-logo-link">
             <span class="logo"><span class="logo-blue">Web</span>Studio</span>
         </a>
-        <address class="footer-address">
-            г. Киев, пр-т Леси Украинки, 26
-            <a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="phone-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <address>
+            <ul class="footer-address">
+                <li>
+                    <a class="address-link" href="https://surl.li/cneql" target="_blank" rel="noopener noreferrer">м.
+                        Київ,
+                        пр-т Лесі Українки,
+                        26</a>
+                </li>
+                <li>
+                    <a class="mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="phone-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
         </address>
     </div>
 </footer>
