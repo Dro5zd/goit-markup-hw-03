@@ -116,8 +116,8 @@ body {
     color: var(--blue);
 }
 
-.nav-links a:hover, .contacts a:hover, .footer a:hover,
-.nav-links a:focus, .contacts a:focus, .footer a:focus {
+.nav-links a:hover, .contacts a:hover, .footer-address a:hover,
+.nav-links a:focus, .contacts a:focus, .footer-address a:focus {
     color: var(--blue);
 }
 
@@ -151,11 +151,8 @@ body {
     padding: 60px 0;
 }
 
-.footer-container .main-logo-link {
+.footer-container .logo {
     margin-bottom: 20px;
-}
-
-.footer .logo {
     line-height: 0.8;
     color: var(--white);
 }
