@@ -23,6 +23,7 @@ ul{
     --opacity-grey: rgba(255, 255, 255, 0.6);
     --light-grey: #F5F4FA;
     --blue: #2196F3;
+    --blue-hover: #188CE8;
     --white: #FFFFFF
 }
 
@@ -216,6 +217,9 @@ body {
     justify-content: center;
     letter-spacing: 0.06em;
     color: var(--white);
+}
+.main-btn:hover {
+    background: var(--blue-hover);
 }
 
 /*About Us*/
