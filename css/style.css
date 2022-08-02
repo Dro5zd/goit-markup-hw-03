@@ -30,8 +30,6 @@ ul{
 /*Main Styles*/
 
 body {
-    min-height: 100vh;
-    margin: 0 auto;
     font-family: 'Roboto', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
@@ -69,11 +67,7 @@ body {
 }
 
 .header-container {
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    flex-direction: row;
 }
 
 .logo {
@@ -185,7 +179,6 @@ body {
 }
 
 .main-title {
-    display: block;
     width: 700px;
     font-weight: 900;
     font-size: 44px;
@@ -212,9 +205,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     letter-spacing: 0.06em;
     color: var(--white);
 }
