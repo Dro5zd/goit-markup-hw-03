@@ -36,7 +36,7 @@ body {
     background: var(--white);
 }
 
-.container, .footer-container {
+.container, .header-container, .footer-container {
     width: 1200px;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
     border-bottom: 1px solid #ECECEC;
 }
 
-.container.header-container {
+.header-container {
     flex-direction: row;
 }
 
