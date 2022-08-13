@@ -148,15 +148,16 @@ body {
 }
 
 .footer-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
     font-style: normal;
-    width: 250px;
-    height: 81px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+}
+
+.footer-address li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-address .address-link {
