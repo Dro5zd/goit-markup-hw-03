@@ -88,13 +88,6 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    width: 295px;
-    justify-content: space-between;
-    margin-right: 331px;
-}
-
-.nav-link ul {
-    display: inline;
 }
 
 .nav-link {
@@ -102,6 +95,7 @@ body {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    margin-right: 50px;
     color: var(--black);
 }
 
@@ -119,6 +113,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 307px;
+    margin-left: auto;
 }
 
 .mail-link, .phone-link {
@@ -349,7 +344,6 @@ body {
 
 .project {
     width: 370px;
-    height: 404px;
     margin: 15px;
     border: 1px solid #EEEEEE;
 }
