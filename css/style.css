@@ -3,6 +3,10 @@
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 h1,
 h2,
 h3,
@@ -38,12 +42,15 @@ body {
 
 .container, .header-container, .footer-container {
     width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .section {
@@ -336,10 +343,6 @@ body {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-}
-
-.project img, .team-item img, .about-us-images img {
-    display: block;
 }
 
 .project {
