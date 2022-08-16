@@ -317,11 +317,14 @@ body {
     margin-bottom: 50px;
 }
 
+.filter-buttons li:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-button {
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
-    margin-right: 8px;
 
     font-weight: 500;
     font-size: 16px;
