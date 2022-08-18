@@ -161,6 +161,8 @@ body {
 }
 
 .footer .container {
+    display: flex;
+    align-items: baseline;
     justify-content: start;
     padding: 60px 15px;
 }
@@ -195,7 +197,7 @@ body {
 }
 
 .footer-social {
-    padding-bottom: 20px;
+
 }
 
 .footer-social-item {
