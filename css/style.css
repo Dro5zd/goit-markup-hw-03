@@ -378,11 +378,13 @@ body {
     padding: 12px;
 }
 
-.team-social-item:hover .social-img, .footer-social-item:hover .social-img {
+.team-social-item:hover .social-img, .footer-social-item:hover .social-img,
+.team-social-link:focus .social-img, .footer-social-link:focus .social-img {
     fill: var(--white);
 }
 
-.team-social-item:hover, .footer-social-item:hover {
+.team-social-item:hover, .footer-social-item:hover,
+.team-social-link:focus, .footer-social-link:focus {
     background-color: var(--blue);
     border-radius: 50%;
 }
@@ -402,12 +404,14 @@ body {
     justify-content: space-between;
 }
 
-.clients-list li:hover .clients-list-img-cover {
+.clients-list li:hover .clients-list-img-cover,
+.clients-list a:focus .clients-list-img-cover {
     border: 1px solid var(--blue);
     border-radius: 4px;
 }
 
-.clients-list li:hover .clients-list-img {
+.clients-list li:hover .clients-list-img,
+.clients-list a:focus .clients-list-img {
     fill: var(--blue);
 }
 
