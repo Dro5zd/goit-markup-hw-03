@@ -529,7 +529,7 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project:hover {
+.project:hover, .project:focus {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -562,6 +562,7 @@ body {
 .project-name {
     font-weight: 700;
     font-size: 18px;
+    color: var(--black);
     line-height: 2;
     letter-spacing: 0.06em;
 }
@@ -575,7 +576,6 @@ body {
 
 .project-img-thumb {
     position: relative;
-    display: inline-block;
     width: 370px;
     height: 294px;
     overflow: hidden;
