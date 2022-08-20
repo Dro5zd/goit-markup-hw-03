@@ -319,9 +319,29 @@ body {
 
 .about-us-images {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     margin-bottom: 94px;
+}
+
+.about-us-images li {
+    position: relative;
+}
+
+.about-us-desc {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 27px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*Team*/
@@ -516,6 +536,43 @@ body {
     color: var(--grey);
 }
 
+.project-img-thumb {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+
+.project-img-thumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: opacity 250ms ease, transform 250ms ease;
+    opacity: 0;
+    transform: translateY(370px);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    padding: 60px 24px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(370px);
+}
+
+.project:hover .project-img-thumb::before, .project:hover .overlay-text {
+    opacity: 1;
+    transform: translateY(0)
+}
 
 /*modal*/
 
@@ -524,20 +581,26 @@ body {
     height: 100%;
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
-    visibility: visible;
+
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
-    position: relative;
-    width: 528px;
-    height: 581px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+    min-width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+
     background: var(--white);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
 }
 
 .cross-btn {
@@ -550,9 +613,5 @@ body {
     right: 8px;
     top: 8px;
     cursor: pointer;
-}
-
-.cross-img {
-
 }
 
