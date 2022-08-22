@@ -702,6 +702,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .form-field input, .form-field textarea {
@@ -709,13 +710,14 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 42px;
-    position: relative;
+
 }
 
 .form-field svg {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 37px;
+    left: 12px;
+    fill: var(--black);
 }
 
 .form-field label {
@@ -744,9 +746,11 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    position: relative;
 }
 
-.policy-group label {
+.label {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -757,6 +761,42 @@ body {
 .policy-group a {
     color: var(--blue);
     text-decoration: underline;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.checkbox-checked, .checkbox-empty {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+/*.checkbox-empty {*/
+/*    background-color: var(--white);*/
+/*}*/
+
+/*.checkbox-checked {*/
+/*    opacity: 0;*/
+/*}*/
+
+.checkbox:checked + .icon {
+    background-color: var(--blue);
+    border: none;
+    background-image: url("../images/icons.svg#icon-check");
+}
+
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--black);
+    border-radius: 2px;
 }
 
 .registration-form form {
