@@ -21,7 +21,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-link" href="./index.html">Студія</a></li>
-                <li><a class="nav-link active" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="nav-link current" href="./portfolio.html">Портфоліо</a></li>
                 <li><a class="nav-link" href="">Контакти</a></li>
             </ul>
         </nav>
@@ -273,6 +273,19 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mailing-form">
+            <h4>Підпишіться на розсилку</h4>
+            <form name="mailing list" autocomplete="on">
+                <label for="user_email"></label>
+                <input type="email" placeholder="E-mail" name="e-mail" id="user_email">
+                <button type="submit" class="main-btn send-btn">
+                    <span>Підписатися</span>
+                    <svg class="send-img" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 </footer>
