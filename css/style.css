@@ -712,11 +712,11 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover .registration-form-img, .form-field:focus .registration-form-img {
+.form-field:hover .registration-form-img, input:focus + .registration-form-img {
     fill: var(--blue);
 }
 
-.form-field input:hover, .form-field textarea:hover {
+.form-field input:hover, .form-field textarea:hover, .form-field input:focus, textarea:focus {
     border: 1px solid var(--blue);
 }
 
