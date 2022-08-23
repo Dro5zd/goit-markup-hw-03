@@ -789,6 +789,10 @@ body {
     background-position: center;
 }
 
+.checkbox:focus + .icon {
+    outline: 5px auto -webkit-focus-ring-color
+}
+
 .icon {
     display: inline-block;
     position: relative;
