@@ -373,7 +373,7 @@
             </address>
         </div>
         <div class="footer__social-wrapper">
-            <h4 class="footer__title">Приєднуйтесь</h4>
+            <h3 class="footer__title">Приєднуйтесь</h3>
             <ul class="social-wrapper">
                 <li class="social-wrapper__item social-wrapper__item--grey">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
@@ -410,7 +410,7 @@
             </ul>
         </div>
         <div class="footer__mailing-form-wrapper">
-            <h4 class="footer__title">Підпишіться на розсилку</h4>
+            <h3 class="footer__title">Підпишіться на розсилку</h3>
             <form class="mailing-form" name="mailing list" autocomplete="on">
                 <label for="user_email"></label>
                 <input class="mailing-form__input" type="email" placeholder="E-mail" name="e-mail" id="user_email">
@@ -426,49 +426,47 @@
 </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="cross-btn" type="button" data-modal-close>
-            <svg class="cross-img" width="11" height="11">
+        <button class="modal__btn" type="button" data-modal-close>
+            <svg class="modal__btn-img" width="11" height="11">
                 <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
-        <div class="registration-form">
-            <h4>Залиште свої дані, ми вам передзвонимо</h4>
-            <form name="registration form">
-                <div class="form-field">
-                    <label for="user_name">Ім'я</label>
-                    <input type="text" name="name" id="user_name">
-                    <svg class="registration-form-img" width="18" height="18">
+        <div class="registration-form-wrapper">
+            <h3 class="registration-form-wrapper__title">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="registration-form" name="registration-form">
+                <div class="registration-form__item">
+                    <label class="registration-form__label" for="user_name">Ім'я</label>
+                    <input class="registration-form__input" type="text" name="name" id="user_name">
+                    <svg class="registration-form__img" width="18" height="18">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </div>
-                <div class="form-field">
-                    <label for="user_phone">Телефон</label>
-                    <input type="tel" name="tel" id="user_phone">
-                    <svg class="registration-form-img" width="18" height="18">
+                <div class="registration-form__item">
+                    <label class="registration-form__label" for="user_phone">Телефон</label>
+                    <input class="registration-form__input" type="tel" name="tel" id="user_phone">
+                    <svg class="registration-form__img" width="18" height="18">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
-                <div class="form-field">
-                    <label for="user_reg_email">Пошта</label>
-                    <input type="email" name="e-mail" id="user_reg_email">
-                    <svg class="registration-form-img" width="18" height="18">
+                <div class="registration-form__item">
+                    <label class="registration-form__label" for="user_reg_email">Пошта</label>
+                    <input class="registration-form__input" type="email" name="e-mail" id="user_reg_email">
+                    <svg class="registration-form__img" width="18" height="18">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
-                <div class="form-field">
-                    <label for="user_comment">Коментар</label>
-                    <textarea type="text-area" placeholder="Введіть текст" name="user comment"
-                              id="user_comment"></textarea>
+                <div class="registration-form__item">
+                    <label class="registration-form__label" for="user_comment">Коментар</label>
+                    <textarea class="registration-form__textarea" type="text-area" placeholder="Введіть текст"
+                              name="user comment" id="user_comment"></textarea>
                 </div>
-
                 <div class="policy-group">
-                    <label for="checkbox" class="label">
-                        <input id="checkbox" type="checkbox" class="checkbox">
-                        <span id="checkbox-span" class="icon"></span>
-                        Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                    <label class="policy-group__label" for="checkbox">
+                        <input id="checkbox" type="checkbox" class="policy-group__checkbox">
+                        <span id="checkbox-span" class="policy-group__icon"></span>Погоджуюся з розсилкою та приймаю
+                        <a class="policy-group__link" href="">Умови договору</a>
                     </label>
                 </div>
-
                 <button type="submit" class="main-btn reg">
                     <span>Відправити</span>
                 </button>
