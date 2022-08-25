@@ -1,0 +1,48 @@
+.policy-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.policy-group__label {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $grey;
+}
+
+.policy-group__link {
+  color: $blue;
+  text-decoration: underline;
+}
+
+.policy-group__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.policy-group__icon {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $black;
+  border-radius: 2px;
+
+  .policy-group__checkbox:checked + & {
+    background-color: $blue;
+    border: 2px solid $blue;
+    background-image: url("../../../images/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .policy-group__checkbox:focus + & {
+    outline: 5px auto -webkit-focus-ring-color
+  }
+}

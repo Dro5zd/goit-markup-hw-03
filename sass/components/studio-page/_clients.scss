@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__img-cover {
+  width: 170px;
+  padding: 16px 32px;
+  border: 1px solid $icons-grey;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients__item:hover &,
+  .clients__link:focus & {
+    border: 1px solid $blue;
+  }
+}
+
+.clients__img {
+  fill: $icons-grey;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients__item:hover &,
+  .clients__link:focus & {
+    fill: $blue;
+  }
+}

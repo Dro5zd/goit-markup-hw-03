@@ -9,3 +9,10 @@ $light-grey: #F5F4FA;
 $white: #FFFFFF;
 $blue: #2196F3;
 $blue-hover: #188CE8;
+
+body {
+  font-family: 'Roboto', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: $black;
+  background: $white;
+}

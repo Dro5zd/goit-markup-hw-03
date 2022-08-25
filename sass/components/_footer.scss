@@ -1,0 +1,29 @@
+.footer {
+  background-color: $light-black;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    padding: 60px 15px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $white;
+  }
+}
+
+//address wrapper
+@import "footer/addres-wrapper";
+
+//social-wrapper
+@import "footer/social-wrapper";
+
+//mailing-form
+@import "footer/mailing-form-wrapper";
