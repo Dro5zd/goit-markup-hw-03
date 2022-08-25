@@ -37,7 +37,7 @@
   .policy-group__checkbox:checked + & {
     background-color: $blue;
     border: 2px solid $blue;
-    background-image: url("../../../images/check.svg");
+    background-image: url("./images/check.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

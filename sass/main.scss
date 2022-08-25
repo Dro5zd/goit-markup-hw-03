@@ -11,14 +11,14 @@
 //Common components
 @import "./components/container";
 @import "./components/section";
-@import "./components/row";
+@import "utils/row";
 @import "./components/social-wrapper";
 @import "./components/logo";
 @import "./components/buttons/main-button";
 @import "components/-section-title";
 
 //Header Style
-@import "components/header/header";
+@import "layouts/header/header";
 
 //Footer style
 @import "./components/footer";
@@ -26,20 +26,20 @@
 //STUDIO PAGE
 
 // Hero
-@import "components/studio-page/hero";
+@import "pages/studio-page/hero";
 //About Us
-@import "components/studio-page/about-us";
+@import "pages/studio-page/about-us";
 //Tech Skills
-@import "components/studio-page/tech-skills";
+@import "pages/studio-page/tech-skills";
 //Team
-@import "components/studio-page/team";
+@import "pages/studio-page/team";
 //Clients
-@import "components/studio-page/clients";
+@import "pages/studio-page/clients";
 
 //PORTFOLIO PAGE STYLES
 
 //Filter buttons
-@import "components/portfolio-page/filter-btns";
+@import "pages/portfolio-page/filter-btns";
 //Project Style
-@import "components/portfolio-page/projects";
+@import "pages/portfolio-page/projects";
 
