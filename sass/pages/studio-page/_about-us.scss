@@ -1,11 +1,23 @@
 .about-us {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 94px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .about-us__item {
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.about-us__img {
+  width: 100%;
 }
 
 .about-us__desc {
@@ -23,4 +35,10 @@
   text-transform: uppercase;
   color: $white;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media (max-width: 768px) {
+  .none{
+    display: none;
+  }
 }

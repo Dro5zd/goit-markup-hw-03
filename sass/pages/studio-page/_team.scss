@@ -4,19 +4,33 @@
 
 .team-list {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team-list__item {
-  width: 270px;
+  width: 450px;
   background: $white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.team-list__img {
+  width: 100%;
 }
 
 .team-list__desc {
-  padding: 32px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-list__name {
@@ -36,3 +50,4 @@
   color: $grey;
   margin-bottom: 16px;
 }
+

@@ -3,12 +3,19 @@
 
   &__container {
     display: flex;
-    align-items: baseline;
-    justify-content: start;
+    flex-direction: column;
+    align-items: center;
     padding: 60px 15px;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
 
   &__title {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -19,11 +26,28 @@
   }
 }
 
+.footer__left {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    gap: 165px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+    margin-bottom: 0;
+  }
+}
+
 //address wrapper
-@import "../layouts/footer/addres-wrapper";
+@import "footer/addres-wrapper";
 
 //social-wrapper
-@import "../layouts/footer/social-wrapper";
+@import "footer/social-wrapper";
 
 //mailing-form
-@import "../layouts/footer/mailing-form-wrapper";
+@import "footer/mailing-form-wrapper";
+
