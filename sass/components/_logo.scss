@@ -1,5 +1,4 @@
 .logo {
-  //margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -7,13 +6,27 @@
   letter-spacing: 0.03em;
   color: $solid-black;
 
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+
+    .menu-container.is-open & {
+      display: none;
+    }
+  }
+
   &__blue-part {
     color: $blue;
   }
 
-  &--white{
+  &--white {
     line-height: 0.8;
     color: $white;
+  }
+}
+
+.footer__address-wrapper .logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
   }
 }
 

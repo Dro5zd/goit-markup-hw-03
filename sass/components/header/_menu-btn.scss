@@ -1,0 +1,36 @@
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn__icon-menu {
+  display: none;
+  .menu-btn.is-open & {
+    display: block;
+  }
+}
+
+.menu-btn__icon-cross {
+
+  .menu-btn.is-open & {
+    display: none;
+  }
+}
+
+
+

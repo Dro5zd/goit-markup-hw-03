@@ -23,6 +23,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $white;
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 

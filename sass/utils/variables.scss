@@ -16,3 +16,7 @@ body {
   color: $black;
   background: $white;
 }
+
+body.modal-open {
+  overflow: hidden;
+}

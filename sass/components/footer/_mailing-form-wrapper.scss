@@ -1,4 +1,5 @@
 .footer__mailing-form-wrapper {
+  //width: 100%;
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
@@ -14,12 +15,12 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-
   }
 
   &__input {
     padding: 15px;
-    width: 300px;
+    min-width: 300px;
+    width: 100%;
     margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
