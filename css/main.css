@@ -401,7 +401,7 @@ body.modal-open {
   flex-direction: column;
   align-items: flex-start;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;

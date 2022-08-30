@@ -11,7 +11,7 @@
     align-items: flex-start;
   }
 
-  @include tablet {
+  @media screen and (max-width: 767px){
     display: none;
     position: absolute;
     top: 0;
