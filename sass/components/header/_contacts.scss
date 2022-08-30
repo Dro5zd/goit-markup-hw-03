@@ -1,15 +1,12 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  //margin-left: auto;
 
-  //flex-direction: row;
-  //align-items: center;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-direction: column-reverse;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: auto;
     flex-direction: row-reverse;
     align-items: center;
@@ -17,15 +14,13 @@
 }
 
 .contacts__link {
-  //display: block;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2px;
   letter-spacing: 0.02em;
   color: $grey;
-  //margin-bottom: 132px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 14px;
     line-height: 1.1;
 
@@ -42,14 +37,13 @@
 .contacts__link--blue {
   color: $blue;
   font-size: 25px;
-  //margin-bottom: 32px;
 
   @media screen and (min-width: 380px) {
     font-size: 34px;
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 14px;
     color: $grey;
     margin-bottom: 0;
@@ -60,33 +54,32 @@
   &:not(:last-child) {
     margin-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 0;
       margin-right: 0;
     }
   }
 
   &:not(:first-child) {
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-bottom: 10px;
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 30px;
     &:not(:first-child) {
-      @media screen and (min-width: 768px) {
+      @include tablet {
         margin-bottom: 0;
       }
     }
   }
 }
 
-
 .contacts__img {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: block;
     fill: $grey;
     margin-right: 10px;

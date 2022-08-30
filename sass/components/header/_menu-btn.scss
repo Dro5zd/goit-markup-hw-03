@@ -13,13 +13,14 @@
   padding: 0;
   z-index: 2;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
 
 .menu-btn__icon-menu {
   display: none;
+
   .menu-btn.is-open & {
     display: block;
   }

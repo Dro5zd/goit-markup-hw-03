@@ -5,9 +5,8 @@
   flex-wrap: wrap;
   margin-left: -10px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
-    //margin-left: 0;
   }
 }
 
@@ -30,6 +29,5 @@
   padding-left: 10px;
 
   color: $blue;
-  //margin-left: 10px;
 }
 

@@ -1,7 +1,7 @@
 .footer__mailing-form-wrapper {
   //width: 100%;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: auto;
   }
 }
@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -32,10 +32,10 @@
     letter-spacing: 0.03em;
     color: $opacity-grey;
 
-    @media screen and (min-width: 480px) {
+    @include mobile {
       width: 450px;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       width: 358px;
       margin-right: 12px;
     }

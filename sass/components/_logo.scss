@@ -6,7 +6,7 @@
   letter-spacing: 0.03em;
   color: $solid-black;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 93px;
 
     .menu-container.is-open & {
@@ -25,7 +25,7 @@
 }
 
 .footer__address-wrapper .logo {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 0;
   }
 }
