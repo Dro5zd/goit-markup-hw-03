@@ -19,11 +19,14 @@ ul {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0, 0, 0, 0);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -873,9 +876,20 @@ body.modal-open {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.features {
+  padding-bottom: 94px;
+}
 @media screen and (max-width: 1199px) {
   .features {
-    display: none;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
